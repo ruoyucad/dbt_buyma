@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: buyma
+    dataset: buyma_ruoyu
+
+    tables:
+      - name: exchange_rates
+      - name: forward_shipping_company
+      - name: products_canada
+      - name: shipping_rate
