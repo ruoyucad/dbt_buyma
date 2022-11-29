@@ -15,7 +15,8 @@ select
     product_name,
     category,
     price_cad * rates.rate as price_jpy,
-    product_url
+    product_url,
+    current_timestamp as dbt_updated_at
 
 from product_canada
 left join rates
