@@ -30,3 +30,5 @@ guess_data_transform as (
 )
 
 
+select * from guess_data_transform
+
