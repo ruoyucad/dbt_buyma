@@ -37,6 +37,7 @@ final as (
         name,
         description,
         image_str,
+        SPLIT(image_str,'|')[OFFSET(0)] AS Thumbnail, --the first image
         current_timestamp as dbt_updated_at
 
     from guess_data_transform
