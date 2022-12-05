@@ -15,7 +15,7 @@ guess_data_transform as (
         'Guess' as brand,
         size,
         color,
-        ifnull(REPLACE((old_price,'CAD',''),'0') as old_price,
+        ifnull(REPLACE(old_price,'CAD',''),'0') as old_price,
         ifnull(REPLACE(new_price,'CAD',''),'0') as new_price,
         name,
         description,
