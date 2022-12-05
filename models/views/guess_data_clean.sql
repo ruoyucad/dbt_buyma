@@ -11,6 +11,7 @@ rates as (
 guess_data_transform as (
     select
         id,
+        url,
         'Guess' as brand,
         size,
         color,
@@ -27,11 +28,12 @@ guess_data_transform as (
 final as (
     select 
         id,
+        url,
         brand,
         size,
         color,
-        safe_cast(old_price as FLOAT64) * rates.rate as old_price_jpy,
-        safe_cast(new_price as FLOAT64) * rates.rate as new_price_jpy,
+        ROUND(safe_cast(old_price as FLOAT64) * rates.rate, 2) as old_price_jpy,
+        ROUND(safe_cast(new_price as FLOAT64) * rates.rate, 2) as new_price_jpy,
         name,
         description,
         image_str,
