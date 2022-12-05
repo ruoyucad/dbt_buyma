@@ -10,3 +10,4 @@ sources:
       - name: products_canada
       - name: shipping_rate
       - name: latest_cadjpy
+      - name: guess_data
