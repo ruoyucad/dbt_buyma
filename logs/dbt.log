@@ -2240,3 +2240,288 @@ select * from final
 [0m02:51:47.009183 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
 [0m02:51:47.010183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027FED7F9DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027FED631A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027FED828CA0>]}
 [0m02:51:47.010183 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-12-05 03:12:28.463444 | cbec4977-2d38-4df1-86c6-4174aaf98e26 ==============================
+[0m03:12:28.463444 [info ] [MainThread]: Running with dbt=1.3.1
+[0m03:12:28.464446 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Ruoyu\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['guess_data_clean'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m03:12:28.464446 [debug] [MainThread]: Tracking: tracking
+[0m03:12:28.464446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ABA0E3D550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ABA0E3D610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ABA0E3D5E0>]}
+[0m03:12:28.522444 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:12:28.523446 [debug] [MainThread]: Partial parsing: updated file: buyma://models\views\guess_data_clean.sql
+[0m03:12:28.533445 [debug] [MainThread]: 1699: static parser successfully parsed views\guess_data_clean.sql
+[0m03:12:28.552445 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.buyma.example
+
+[0m03:12:28.557445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cbec4977-2d38-4df1-86c6-4174aaf98e26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ABA0FAC760>]}
+[0m03:12:28.563445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cbec4977-2d38-4df1-86c6-4174aaf98e26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ABA0E52DC0>]}
+[0m03:12:28.563445 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 319 macros, 0 operations, 0 seed files, 6 sources, 0 exposures, 0 metrics
+[0m03:12:28.564445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cbec4977-2d38-4df1-86c6-4174aaf98e26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ABA0E52940>]}
+[0m03:12:28.565445 [info ] [MainThread]: 
+[0m03:12:28.565445 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m03:12:28.566445 [debug] [ThreadPool]: Acquiring new bigquery connection "list_buymamanagement"
+[0m03:12:28.566445 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:12:29.053603 [debug] [ThreadPool]: Acquiring new bigquery connection "list_buymamanagement_buyma_ruoyu"
+[0m03:12:29.053603 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:12:29.494580 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:12:29.494580 [debug] [MainThread]: Connection 'list_buymamanagement' was properly closed.
+[0m03:12:29.494580 [debug] [MainThread]: Connection 'list_buymamanagement_buyma_ruoyu' was properly closed.
+[0m03:12:29.494580 [debug] [MainThread]: Flushing usage events
+[0m03:12:29.656796 [info ] [MainThread]: ctrl-c
+
+
+============================== 2022-12-05 03:12:34.658047 | 3cb93424-054b-4fbe-a225-d8f892b424a8 ==============================
+[0m03:12:34.658047 [info ] [MainThread]: Running with dbt=1.3.1
+[0m03:12:34.659047 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Ruoyu\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['guess_data_clean'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m03:12:34.659047 [debug] [MainThread]: Tracking: tracking
+[0m03:12:34.659047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245B347C760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245B347C820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245B347C7F0>]}
+[0m03:12:34.719048 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:12:34.719048 [debug] [MainThread]: Partial parsing: updated file: buyma://models\views\guess_data_clean.sql
+[0m03:12:34.730049 [debug] [MainThread]: 1699: static parser successfully parsed views\guess_data_clean.sql
+[0m03:12:34.751047 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.buyma.example
+
+[0m03:12:34.757051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3cb93424-054b-4fbe-a225-d8f892b424a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245B35F5040>]}
+[0m03:12:34.763047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3cb93424-054b-4fbe-a225-d8f892b424a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245B3492940>]}
+[0m03:12:34.763047 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 319 macros, 0 operations, 0 seed files, 6 sources, 0 exposures, 0 metrics
+[0m03:12:34.764048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3cb93424-054b-4fbe-a225-d8f892b424a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245B3492A30>]}
+[0m03:12:34.765047 [info ] [MainThread]: 
+[0m03:12:34.766046 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m03:12:34.767049 [debug] [ThreadPool]: Acquiring new bigquery connection "list_buymamanagement"
+[0m03:12:34.767049 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:12:35.201040 [debug] [ThreadPool]: Acquiring new bigquery connection "list_buymamanagement_buyma_ruoyu"
+[0m03:12:35.201040 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:12:35.657577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3cb93424-054b-4fbe-a225-d8f892b424a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245B34F4A00>]}
+[0m03:12:35.658576 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m03:12:35.658576 [info ] [MainThread]: 
+[0m03:12:35.661576 [debug] [Thread-1  ]: Began running node model.buyma.guess_data_clean
+[0m03:12:35.662575 [info ] [Thread-1  ]: 1 of 1 START sql table model buyma_ruoyu.guess_data_clean ...................... [RUN]
+[0m03:12:35.662575 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.buyma.guess_data_clean"
+[0m03:12:35.662575 [debug] [Thread-1  ]: Began compiling node model.buyma.guess_data_clean
+[0m03:12:35.662575 [debug] [Thread-1  ]: Compiling model.buyma.guess_data_clean
+[0m03:12:35.665577 [debug] [Thread-1  ]: Writing injected SQL for node "model.buyma.guess_data_clean"
+[0m03:12:35.666575 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:12:35.666575 [debug] [Thread-1  ]: Began executing node model.buyma.guess_data_clean
+[0m03:12:35.678575 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m03:12:36.245572 [debug] [Thread-1  ]: Writing runtime sql for node "model.buyma.guess_data_clean"
+[0m03:12:36.246572 [debug] [Thread-1  ]: On model.buyma.guess_data_clean: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "buyma", "target_name": "dev", "node_id": "model.buyma.guess_data_clean"} */
+
+  
+    
+
+    create or replace table `buymamanagement`.`buyma_ruoyu`.`guess_data_clean`
+    
+    
+    OPTIONS()
+    as (
+      
+
+with guess_data as (
+    select * from `buymamanagement`.`buyma_ruoyu`.`guess_data`
+),
+
+rates as (
+    select * from `buymamanagement`.`buyma_ruoyu`.`exchange_rates`
+),
+
+guess_data_transform as (
+    select
+        id,
+        url,
+        'Guess' as brand,
+        size,
+        color,
+        ifnull(REPLACE(old_price,'CAD',''),'0') as old_price,
+        ifnull(REPLACE(new_price,'CAD',''),'0') as new_price,
+        name,
+        description,
+        image_str,
+        '1' AS echange_rate_id, 
+
+    from guess_data
+),
+
+
+ --https://www.guess.com/ca/en/men/apparel/jeans-and-denim/tapered/eco-distressed-tapered-jeans-blue/M2YAS2D4K32-FRMN.html
+-- https://www.guess.com/ca/en/men/apparel/jackets-and-coats/puffer-coats/arctic-patch-metallic-puffer-jacket-silver/M3RL50RCXP0-G9F9.html
+
+final as (
+    select 
+        id,
+        url,
+        brand,
+        CASE 
+            when SPLIT(url,'/')[OFFSET(6)] = 'features' then SPLIT(url,'/')[OFFSET(8)] 
+            when SPLIT(url,'/')[OFFSET(6)] = 'apparel' then SPLIT(url,'/')[OFFSET(7)] 
+        end as category
+        size,
+        color,
+        ROUND(safe_cast(old_price as FLOAT64) * rates.rate,1) as old_price_jpy,
+        ROUND(safe_cast(new_price as FLOAT64) * rates.rate,1) as new_price_jpy,
+        name,
+        description,
+        image_str,
+        SPLIT(image_str,'|')[OFFSET(0)] AS Thumbnail, --the first image
+        current_timestamp as dbt_updated_at
+
+    from guess_data_transform
+    left join rates
+    on rates.rate_id = guess_data_transform.echange_rate_id
+    where id <> 'GMDOLO-MBRLL'
+) 
+
+select * from final
+    );
+  
+[0m03:12:36.460723 [debug] [Thread-1  ]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected ")" but got identifier "size" at [51:9]')
+[0m03:12:37.216530 [error] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=buymamanagement&j=bq:us-central1:d6cb9c1a-a49d-44ca-a1df-5c2441a3bcdc&page=queryresults
+[0m03:12:37.216530 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:12:37.217531 [debug] [Thread-1  ]: Database Error in model guess_data_clean (models\views\guess_data_clean.sql)
+  Syntax error: Expected ")" but got identifier "size" at [51:9]
+  compiled Code at target\run\buyma\models\views\guess_data_clean.sql
+[0m03:12:37.217531 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3cb93424-054b-4fbe-a225-d8f892b424a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245B37AC8E0>]}
+[0m03:12:37.217531 [error] [Thread-1  ]: 1 of 1 ERROR creating sql table model buyma_ruoyu.guess_data_clean ............. [[31mERROR[0m in 1.55s]
+[0m03:12:37.218529 [debug] [Thread-1  ]: Finished running node model.buyma.guess_data_clean
+[0m03:12:37.218529 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m03:12:37.219530 [info ] [MainThread]: 
+[0m03:12:37.219530 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.45 seconds (2.45s).
+[0m03:12:37.219530 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:12:37.219530 [debug] [MainThread]: Connection 'list_buymamanagement' was properly closed.
+[0m03:12:37.220529 [debug] [MainThread]: Connection 'list_buymamanagement_buyma_ruoyu' was properly closed.
+[0m03:12:37.220529 [debug] [MainThread]: Connection 'model.buyma.guess_data_clean' was properly closed.
+[0m03:12:37.225529 [info ] [MainThread]: 
+[0m03:12:37.225529 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m03:12:37.226529 [info ] [MainThread]: 
+[0m03:12:37.226529 [error] [MainThread]: [33mDatabase Error in model guess_data_clean (models\views\guess_data_clean.sql)[0m
+[0m03:12:37.226529 [error] [MainThread]:   Syntax error: Expected ")" but got identifier "size" at [51:9]
+[0m03:12:37.227529 [error] [MainThread]:   compiled Code at target\run\buyma\models\views\guess_data_clean.sql
+[0m03:12:37.227529 [info ] [MainThread]: 
+[0m03:12:37.228529 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m03:12:37.228529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245B3620AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245B380B760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245B382BD00>]}
+[0m03:12:37.228529 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-12-05 03:12:50.118527 | cba44b6f-afe6-4943-87e3-c16a11560ee2 ==============================
+[0m03:12:50.118527 [info ] [MainThread]: Running with dbt=1.3.1
+[0m03:12:50.118527 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Ruoyu\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['guess_data_clean'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m03:12:50.118527 [debug] [MainThread]: Tracking: tracking
+[0m03:12:50.119529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120B8162C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120B8162D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120B8162D00>]}
+[0m03:12:50.177528 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:12:50.177528 [debug] [MainThread]: Partial parsing: updated file: buyma://models\views\guess_data_clean.sql
+[0m03:12:50.187527 [debug] [MainThread]: 1699: static parser successfully parsed views\guess_data_clean.sql
+[0m03:12:50.205528 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.buyma.example
+
+[0m03:12:50.211529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cba44b6f-afe6-4943-87e3-c16a11560ee2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120B82E4EE0>]}
+[0m03:12:50.217527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cba44b6f-afe6-4943-87e3-c16a11560ee2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120B82C0E80>]}
+[0m03:12:50.217527 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 319 macros, 0 operations, 0 seed files, 6 sources, 0 exposures, 0 metrics
+[0m03:12:50.218528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cba44b6f-afe6-4943-87e3-c16a11560ee2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120B82C0E20>]}
+[0m03:12:50.218528 [info ] [MainThread]: 
+[0m03:12:50.219529 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m03:12:50.220528 [debug] [ThreadPool]: Acquiring new bigquery connection "list_buymamanagement"
+[0m03:12:50.220528 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:12:50.732525 [debug] [ThreadPool]: Acquiring new bigquery connection "list_buymamanagement_buyma_ruoyu"
+[0m03:12:50.732525 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:12:51.453522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cba44b6f-afe6-4943-87e3-c16a11560ee2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120B8179670>]}
+[0m03:12:51.453522 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m03:12:51.454522 [info ] [MainThread]: 
+[0m03:12:51.457522 [debug] [Thread-1  ]: Began running node model.buyma.guess_data_clean
+[0m03:12:51.457522 [info ] [Thread-1  ]: 1 of 1 START sql table model buyma_ruoyu.guess_data_clean ...................... [RUN]
+[0m03:12:51.458522 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.buyma.guess_data_clean"
+[0m03:12:51.458522 [debug] [Thread-1  ]: Began compiling node model.buyma.guess_data_clean
+[0m03:12:51.458522 [debug] [Thread-1  ]: Compiling model.buyma.guess_data_clean
+[0m03:12:51.461521 [debug] [Thread-1  ]: Writing injected SQL for node "model.buyma.guess_data_clean"
+[0m03:12:51.462521 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:12:51.462521 [debug] [Thread-1  ]: Began executing node model.buyma.guess_data_clean
+[0m03:12:51.474524 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m03:12:52.007866 [debug] [Thread-1  ]: Writing runtime sql for node "model.buyma.guess_data_clean"
+[0m03:12:52.007866 [debug] [Thread-1  ]: On model.buyma.guess_data_clean: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "buyma", "target_name": "dev", "node_id": "model.buyma.guess_data_clean"} */
+
+  
+    
+
+    create or replace table `buymamanagement`.`buyma_ruoyu`.`guess_data_clean`
+    
+    
+    OPTIONS()
+    as (
+      
+
+with guess_data as (
+    select * from `buymamanagement`.`buyma_ruoyu`.`guess_data`
+),
+
+rates as (
+    select * from `buymamanagement`.`buyma_ruoyu`.`exchange_rates`
+),
+
+guess_data_transform as (
+    select
+        id,
+        url,
+        'Guess' as brand,
+        size,
+        color,
+        ifnull(REPLACE(old_price,'CAD',''),'0') as old_price,
+        ifnull(REPLACE(new_price,'CAD',''),'0') as new_price,
+        name,
+        description,
+        image_str,
+        '1' AS echange_rate_id, 
+
+    from guess_data
+),
+
+
+ --https://www.guess.com/ca/en/men/apparel/jeans-and-denim/tapered/eco-distressed-tapered-jeans-blue/M2YAS2D4K32-FRMN.html
+-- https://www.guess.com/ca/en/men/apparel/jackets-and-coats/puffer-coats/arctic-patch-metallic-puffer-jacket-silver/M3RL50RCXP0-G9F9.html
+
+final as (
+    select 
+        id,
+        url,
+        brand,
+        CASE 
+            when SPLIT(url,'/')[OFFSET(6)] = 'features' then SPLIT(url,'/')[OFFSET(8)] 
+            when SPLIT(url,'/')[OFFSET(6)] = 'apparel' then SPLIT(url,'/')[OFFSET(7)] 
+        end as category,
+        size,
+        color,
+        ROUND(safe_cast(old_price as FLOAT64) * rates.rate,1) as old_price_jpy,
+        ROUND(safe_cast(new_price as FLOAT64) * rates.rate,1) as new_price_jpy,
+        name,
+        description,
+        image_str,
+        SPLIT(image_str,'|')[OFFSET(0)] AS Thumbnail, --the first image
+        current_timestamp as dbt_updated_at
+
+    from guess_data_transform
+    left join rates
+    on rates.rate_id = guess_data_transform.echange_rate_id
+    where id <> 'GMDOLO-MBRLL'
+) 
+
+select * from final
+    );
+  
+[0m03:12:54.489092 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=buymamanagement&j=bq:07bb419c-c3ca-4275-b5c2-a4715ccd3fe2:us-central1&page=queryresults
+[0m03:12:54.502090 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:12:54.503090 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cba44b6f-afe6-4943-87e3-c16a11560ee2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120B84BAAC0>]}
+[0m03:12:54.503090 [info ] [Thread-1  ]: 1 of 1 OK created sql table model buyma_ruoyu.guess_data_clean ................. [[32mCREATE TABLE (429.0 rows, 426.7 KB processed)[0m in 3.04s]
+[0m03:12:54.504080 [debug] [Thread-1  ]: Finished running node model.buyma.guess_data_clean
+[0m03:12:54.505081 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m03:12:54.505081 [info ] [MainThread]: 
+[0m03:12:54.506090 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.29 seconds (4.29s).
+[0m03:12:54.506090 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:12:54.506090 [debug] [MainThread]: Connection 'list_buymamanagement' was properly closed.
+[0m03:12:54.506090 [debug] [MainThread]: Connection 'list_buymamanagement_buyma_ruoyu' was properly closed.
+[0m03:12:54.506090 [debug] [MainThread]: Connection 'model.buyma.guess_data_clean' was properly closed.
+[0m03:12:54.512080 [info ] [MainThread]: 
+[0m03:12:54.512080 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:12:54.513080 [info ] [MainThread]: 
+[0m03:12:54.513080 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m03:12:54.513080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120B84FBCA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120B82C09D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120B84B1CA0>]}
+[0m03:12:54.514080 [debug] [MainThread]: Flushing usage events
